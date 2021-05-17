@@ -1,0 +1,89 @@
+
+
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class="card-wrapper">
+<div class="card">
+<h1 class="center">
+Create an account
+</h1>
+
+<form name="signup_form">
+
+<label for="name">Name</label>
+<input type="text" name="name" class="feild" required >
+
+<label for="email">Email</label>
+<input type="email" name="email" class="feild" required >
+
+<label for="password">Password</label>
+<input type="password" name="password" class="feild" required >
+
+
+<!-- space for our errrors -->
+<p class="error error--hidden"></p>
+
+
+
+<input type="submit" value="sign up" class="btn">
+
+
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <h1 class="center">
+    Log in
+    </h1>
+    
+    <form name="login_form">
+    
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" class="feild" required >
+    
+    <label for="password">Password</label>
+    <input type="password" name="password" class="feild" required >
+    
+    
+    <!-- space for our errrors -->
+    <p class="error error--hidden"></p>
+    
+    
+    
+    <input type="submit" value="log in" class="btn">
+    
+    
+    
+    
+    </form>
+    
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+
